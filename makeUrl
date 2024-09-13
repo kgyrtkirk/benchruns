@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+if [ "$#" -eq 0 ] ;then
+cat << EOF
+$0 [path/jmh1.json] [path/jmh2.json] ...
+	builds an url to compare JMH results; must be run from repo root
+	like: https://jmh.morethan.io/?sources=https://raw.githubusercontent.com/kgyrtkirk/benchruns/main/pr-16800/out.pr-16800.jar.json,https://raw.githubusercontent.com/kgyrtkirk/benchruns/main/pr-16800/out.base.jar.json
+EOF
+exit 1
+fi
+
+echo -n "https://jmh.morethan.io/?sources="
+for path in "$@";do
+echo "https://raw.githubusercontent.com/kgyrtkirk/benchruns/main/$path"
+done | paste -d, -s -
