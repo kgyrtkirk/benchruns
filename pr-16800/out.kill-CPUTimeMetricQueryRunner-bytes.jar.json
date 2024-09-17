@@ -1,0 +1,452 @@
+[
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.groupByWithWindow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 529.7448315463158,
+            "scoreError" : 31.297212155347392,
+            "scoreConfidence" : [
+                498.44761939096844,
+                561.0420437016633
+            ],
+            "scorePercentiles" : {
+                "0.0" : 520.4034129,
+                "50.0" : 528.6158891052631,
+                "90.0" : 538.3337676315789,
+                "95.0" : 538.3337676315789,
+                "99.0" : 538.3337676315789,
+                "99.9" : 538.3337676315789,
+                "99.99" : 538.3337676315789,
+                "99.999" : 538.3337676315789,
+                "99.9999" : 538.3337676315789,
+                "100.0" : 538.3337676315789
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    520.4034129,
+                    528.6158891052631,
+                    537.7625258947369,
+                    523.6085622,
+                    538.3337676315789
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.groupByWithoutWindow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 473.34341206450216,
+            "scoreError" : 37.98313602646685,
+            "scoreConfidence" : [
+                435.3602760380353,
+                511.326548090969
+            ],
+            "scorePercentiles" : {
+                "0.0" : 464.66931763636364,
+                "50.0" : 469.907638,
+                "90.0" : 487.09023361904764,
+                "95.0" : 487.09023361904764,
+                "99.0" : 487.09023361904764,
+                "99.9" : 487.09023361904764,
+                "99.99" : 487.09023361904764,
+                "99.999" : 487.09023361904764,
+                "99.9999" : 487.09023361904764,
+                "100.0" : 487.09023361904764
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    480.0029864761905,
+                    487.09023361904764,
+                    469.907638,
+                    464.66931763636364,
+                    465.0468845909091
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.simpleWindow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 11188.0706558,
+            "scoreError" : 732.6108696843346,
+            "scoreConfidence" : [
+                10455.459786115665,
+                11920.681525484335
+            ],
+            "scorePercentiles" : {
+                "0.0" : 10940.917193,
+                "50.0" : 11169.167987,
+                "90.0" : 11474.791834,
+                "95.0" : 11474.791834,
+                "99.0" : 11474.791834,
+                "99.9" : 11474.791834,
+                "99.99" : 11474.791834,
+                "99.999" : 11474.791834,
+                "99.9999" : 11474.791834,
+                "100.0" : 11474.791834
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    10940.917193,
+                    11199.25291,
+                    11474.791834,
+                    11169.167987,
+                    11156.223355
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.simpleWindowUnbounded",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 8293.3616778,
+            "scoreError" : 596.4918949831628,
+            "scoreConfidence" : [
+                7696.869782816837,
+                8889.853572783162
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8095.991598,
+                "50.0" : 8249.3760765,
+                "90.0" : 8484.986264,
+                "95.0" : 8484.986264,
+                "99.0" : 8484.986264,
+                "99.9" : 8484.986264,
+                "99.99" : 8484.986264,
+                "99.999" : 8484.986264,
+                "99.9999" : 8484.986264,
+                "100.0" : 8484.986264
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    8249.3760765,
+                    8225.656919,
+                    8484.986264,
+                    8410.7975315,
+                    8095.991598
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.windowFromCurrentRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 12710.554204999999,
+            "scoreError" : 1859.3893526986765,
+            "scoreConfidence" : [
+                10851.164852301323,
+                14569.943557698674
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11890.001217,
+                "50.0" : 12969.249154,
+                "90.0" : 13036.240924,
+                "95.0" : 13036.240924,
+                "99.0" : 13036.240924,
+                "99.9" : 13036.240924,
+                "99.99" : 13036.240924,
+                "99.999" : 13036.240924,
+                "99.9999" : 13036.240924,
+                "100.0" : 13036.240924
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    12999.654764,
+                    13036.240924,
+                    12969.249154,
+                    12657.624966,
+                    11890.001217
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.windowTillCurrentRow",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 12031.7146578,
+            "scoreError" : 1285.835819645434,
+            "scoreConfidence" : [
+                10745.878838154566,
+                13317.550477445433
+            ],
+            "scorePercentiles" : {
+                "0.0" : 11666.549833,
+                "50.0" : 12041.438128,
+                "90.0" : 12410.506732,
+                "95.0" : 12410.506732,
+                "99.0" : 12410.506732,
+                "99.9" : 12410.506732,
+                "99.99" : 12410.506732,
+                "99.999" : 12410.506732,
+                "99.9999" : 12410.506732,
+                "100.0" : 12410.506732
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    12310.585582,
+                    12041.438128,
+                    11666.549833,
+                    12410.506732,
+                    11729.493014
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.windowWithSorter",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 12875.508353199999,
+            "scoreError" : 380.9545265154309,
+            "scoreConfidence" : [
+                12494.553826684569,
+                13256.46287971543
+            ],
+            "scorePercentiles" : {
+                "0.0" : 12762.668332,
+                "50.0" : 12896.020299,
+                "90.0" : 12989.874871,
+                "95.0" : 12989.874871,
+                "99.0" : 12989.874871,
+                "99.9" : 12989.874871,
+                "99.99" : 12989.874871,
+                "99.999" : 12989.874871,
+                "99.9999" : 12989.874871,
+                "100.0" : 12989.874871
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    12762.668332,
+                    12944.096117,
+                    12989.874871,
+                    12896.020299,
+                    12784.882147
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.21",
+        "benchmark" : "org.apache.druid.benchmark.query.SqlWindowFunctionsBenchmark.windowWithoutSorter",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "/usr/lib/jvm/zulu11-ca-amd64/bin/java",
+        "jvmArgs" : [
+        ],
+        "jdkVersion" : "11.0.23",
+        "vmName" : "OpenJDK 64-Bit Server VM",
+        "vmVersion" : "11.0.23+9-LTS",
+        "warmupIterations" : 3,
+        "warmupTime" : "10 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "10 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "rowsPerSegment" : "2000000",
+            "schema" : "auto",
+            "storageType" : "mmap"
+        },
+        "primaryMetric" : {
+            "score" : 7942.0937481,
+            "scoreError" : 616.6183076989237,
+            "scoreConfidence" : [
+                7325.475440401076,
+                8558.712055798924
+            ],
+            "scorePercentiles" : {
+                "0.0" : 7791.3369195,
+                "50.0" : 7927.7182825,
+                "90.0" : 8188.7420945,
+                "95.0" : 8188.7420945,
+                "99.0" : 8188.7420945,
+                "99.9" : 8188.7420945,
+                "99.99" : 8188.7420945,
+                "99.999" : 8188.7420945,
+                "99.9999" : 8188.7420945,
+                "100.0" : 8188.7420945
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    7791.3369195,
+                    7813.360609,
+                    7989.310835,
+                    7927.7182825,
+                    8188.7420945
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+
